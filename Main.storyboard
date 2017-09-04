@@ -27,11 +27,17 @@
                                     <constraint id="1916" firstAttribute="width" constant="75"/>
                                 </constraints>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6">
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6">
                                 <rect key="frame" x="103" y="408" width="51" height="31"/>
+                                <connections>
+                                    <action selector="SwitchNight_ValueChanged:" destination="BYZ-38-t0r" id="2844" eventType="valueChanged"/>
+                                </connections>
                             </switch>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="7" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="103" y="441" width="197" height="31"/>
+                                <connections>
+                                    <action selector="SliderSize_ValueChanged:" destination="BYZ-38-t0r" id="2845" eventType="valueChanged"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Size:" lineBreakMode="tailTruncation" minimumFontSize="10" id="8" translatesAutoresizingMaskIntoConstraints="NO">
                                 <rect key="frame" x="20" y="446" width="75" height="21"/>
@@ -66,6 +72,11 @@
                             <constraint id="2595" firstItem="7" firstAttribute="leading" secondItem="8" secondAttribute="centerX" constant="47"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="switchNight" destination="6" id="name-outlet-6"/>
+                        <outlet property="btnStart" destination="9" id="name-outlet-9"/>
+                        <outlet property="sliderSize" destination="7" id="name-outlet-7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,4 +88,8 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <resources>
+        <image name="star.png" width="50" height="50"/>
+        <image name="xamlogo.png" width="75" height="67"/>
+    </resources>
 </document>
