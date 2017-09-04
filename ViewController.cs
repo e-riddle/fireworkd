@@ -7,7 +7,7 @@ namespace Fireworks
 {
 	public partial class ViewController : UIViewController
 	{
-        
+       
 
         SimpleParticleGen fireworks;
 
@@ -32,6 +32,15 @@ namespace Fireworks
 
 
 		}
+
+        partial void ButtonAbout_TouchUpInside(UIButton sender)
+        {
+			var aboutVC = (AboutViewController)this.Storyboard.InstantiateViewController("AboutViewController");
+
+			this.PresentViewController(aboutVC, true, null);
+        }
+
+
 
         partial void SliderSize_ValueChanged(UISlider sender)
         {

@@ -20,11 +20,19 @@ namespace Fireworks
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UIButton buttonAbout { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UISlider sliderSize { get; set; }
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UISwitch switchNight { get; set; }
+
+        [Action ("ButtonAbout_TouchUpInside:")]
+        [GeneratedCode ("iOS Designer", "1.0")]
+        partial void ButtonAbout_TouchUpInside (UIKit.UIButton sender);
 
         [Action ("SliderSize_ValueChanged:")]
         [GeneratedCode ("iOS Designer", "1.0")]
@@ -39,6 +47,11 @@ namespace Fireworks
             if (btnStart != null) {
                 btnStart.Dispose ();
                 btnStart = null;
+            }
+
+            if (buttonAbout != null) {
+                buttonAbout.Dispose ();
+                buttonAbout = null;
             }
 
             if (sliderSize != null) {
