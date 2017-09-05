@@ -33,12 +33,12 @@ namespace Fireworks
 
 		}
 
-        partial void ButtonAbout_TouchUpInside(UIButton sender)
-        {
-			var aboutVC = (AboutViewController)this.Storyboard.InstantiateViewController("AboutViewController");
+   //     partial void ButtonAbout_TouchUpInside(UIButton sender)
+   //     {
+			//var aboutVC = (AboutViewController)this.Storyboard.InstantiateViewController("AboutViewController");
 
-			this.PresentViewController(aboutVC, true, null);
-        }
+			//this.PresentViewController(aboutVC, true, null);
+        //}
 
 
 

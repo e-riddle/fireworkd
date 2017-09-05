@@ -62,7 +62,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="ButtonAbout_TouchUpInside:" destination="BYZ-38-t0r" id="3803" eventType="touchUpInside"/>
+                                    <segue id="5705" destination="3502" kind="modal"/>
                                 </connections>
                             </button>
                         </subviews>
